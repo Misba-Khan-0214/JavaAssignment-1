@@ -94,17 +94,14 @@ public class Main2 {
     public static void main(String[] args) {
         Library library = new Library();
 
-        // Create some books
         Book b1 = new Book("B001", "The Love Hypothesis", "Ali Hazelwood", true);
         Book b2 = new Book("B002", "Atomic Habits", "James Clear", true);
         Book b3 = new Book("B003", "It Ends With Us", "Colleen Hoover", true);
 
-        // Add books to library
         library.addItem(b1);
         library.addItem(b2);
         library.addItem(b3);
 
-        // Display all books initially
         library.displayAllItems();
 
         System.out.println("\n Borrowing Operations");
@@ -128,7 +125,6 @@ public class Main2 {
             System.out.println(e.getMessage());
         }
 
-        // Display all books after operations
         library.displayAllItems();
     }
 }
